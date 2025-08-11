@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBERLOGISTICS EXPRESS S.L.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="layout">
+
+        <header>
+            <nav>
+                <section>
+                    <a href="#">
+                        <img src="assets/logo-iberlogistics.png" width="200">
+                    </a>
+                </section>
+
+                <section>
+                    <ul class="nav">
+                        <li><a href="#">Transporte Aéreo</a></li>
+                        <li><a href="#">Transporte Marítimo</a></li>
+                        <li><a href="#">Comercio Exterior</a></li>
+                        <li><a href="mailto:iberlogistics@iberlogistics.com">Contacto</a></li>
+                    </ul>
+                </section>
+
+                <section class="lang-switch" onclick="toggleLanguage()">
+                    <img src="assets/idioma.png" alt="Language" width="24" height="20">
+                    <span id="lang-label">English</span>
+                </section>
+
+            </nav>
+
+            <div class="hero-content">
+                <h1>Tu carga, nuestro compromiso</h1>
+                <p>Soluciones rápidas, seguras y competitivas para tu transporte internacional.</p>
+                <a href="#" class="btn">Solicitar presupuesto</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="services" id="services">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+
+                    <input type="checkbox" id="modal-air-toggle" class="modal-toggle" hidden>
+                    <div class="modal" id="modal-air">
+                        <div class="modal-content">
+                            <label for="modal-air-toggle" class="modal-close">&times;</label>
+                            <h3 id="modal-air-title">Detalles de Transporte Aéreo</h3>
+                            <p id="modal-air-text">Envíos urgentes y seguros a cualquier parte del mundo, con seguimiento en tiempo real y atención personalizada.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/avion.png" alt="Transporte Aéreo">
+                        <h3>Transporte Aéreo</h3>
+                        <p>Envíos urgentes y seguros a cualquier parte del mundo.</p>
+                        <label for="modal-air-toggle" class="more-info-btn">Más información →</label>
+                    </div>
+
+                    <input type="checkbox" id="modal-maritime-toggle" class="modal-toggle" hidden>
+                    <div class="modal" id="modal-maritime">
+                        <div class="modal-content">
+                            <label for="modal-maritime-toggle" class="modal-close">&times;</label>
+                            <h3 id="modal-maritime-title">Detalles de Transporte Marítimo</h3>
+                            <p id="modal-maritime-text">Importación y exportación por vía marítima con cobertura global, opciones flexibles y control de cargas voluminosas.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/crucero.png" alt="Transporte Marítimo">
+                        <h3>Transporte Marítimo</h3>
+                        <p>Importación y exportación por vía marítima con cobertura global.</p>
+                        <label for="modal-maritime-toggle" class="more-info-btn">Más información →</label>
+                    </div>
+
+                    <input type="checkbox" id="modal-customs-toggle" class="modal-toggle" hidden>
+                    <div class="modal" id="modal-customs">
+                        <div class="modal-content">
+                            <label for="modal-customs-toggle" class="modal-close">&times;</label>
+                            <h3 id="modal-customs-title">Detalles de Comercio Exterior y Aduanas</h3>
+                            <p id="modal-customs-text">Asesoría y gestión integral de trámites aduaneros, permisos y regulaciones para asegurar que tu mercancía cumpla con todos los requisitos legales.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/comercio.png" alt="Comercio Exterior y Aduanas">
+                        <h3>Comercio Exterior y Aduanas</h3>
+                        <p>Asesoría y gestión integral de trámites aduaneros y comercio exterior.</p>
+                        <label for="modal-customs-toggle" class="more-info-btn">Más información →</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="why-us" id="why-us">
+                <h2>¿Por qué elegirnos?</h2>
+                <p class="why-subtitle">Confía tu logística a expertos con más de 15 años de experiencia.</p>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <img src="assets/entrega-rapida.png" alt="Rapidez">
+                        <h3>Rapidez</h3>
+                        <p>Procesos optimizados para que tu carga llegue en el menor tiempo posible.</p>
+                    </div>
+                    <div class="why-card">
+                        <img src="assets/verificado.png" alt="Seguridad">
+                        <h3>Seguridad</h3>
+                        <p>Protegemos tus envíos con sistemas y protocolos certificados.</p>
+                    </div>
+                    <div class="why-card">
+                        <img src="assets/tarifas-de-cajeros-automaticos.png" alt="Tarifas competitivas">
+                        <h3>Tarifas competitivas</h3>
+                        <p>Precios ajustados y transparentes para todos nuestros servicios.</p>
+                    </div>
+                    <div class="why-card">
+                        <img src="assets/soporte-personalizado.png" alt="Atención personalizada">
+                        <h3>Atención personalizada</h3>
+                        <p>Asistencia directa y dedicada durante todo el proceso de envío.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Contáctanos</h2>
+                <p class="contact-subtitle">Estamos listos para ayudarte con tu próximo envío.</p>
+
+                <div class="contact-grid">
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <input type="tel" name="phone" placeholder="Teléfono">
+                        <textarea id="autoGrow" style="resize: none; overflow: hidden;" maxlength="1000" placeholder="Escribe tu mensaje..."></textarea>
+                        <div id="charCount">0 / 1000</div>
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                
+                <div class="footer-brand">
+                    <a href="#">
+                        <img src="assets/logo-iberlogistics.png" alt="Iberlogistics Express" width="180">
+                    </a>
+                    <p>© 2025 Iberlogistics Express S.L.<br>
+                    Todos los derechos reservados.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>C./ Trespadene Nº 7 – 1º C<br>
+                    Barrio del Aeropuerto<br>
+                    28042 Madrid, España</p>
+                    <p>Tel: <a href="tel:+34917479564">+34 91 747 95 64</a><br>
+                    Fax/Tel: +34 91 329 32 18<br>
+                    Email: <a href="mailto:iberlogistics@iberlogistics.com">iberlogistics@iberlogistics.com</a></p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#why-us">Sobre nosotros</a></li>
+                        <li><a href="mailto:iberlogistics@iberlogistics.com">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Desarrollado por Iberlogistics Express S.L.</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+<script>
+  document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        const modalId = modal.id;
+        const toggleId = modalId + '-toggle';
+        const checkbox = document.getElementById(toggleId);
+        if (checkbox) checkbox.checked = false;
+      }
+    });
+  });
+
+  const textarea = document.getElementById('autoGrow');
+  const charCount = document.getElementById('charCount');
+
+  textarea.addEventListener('input', () => {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
+
+    charCount.textContent = `${textarea.value.length} / 1000`;
+  });
+
+  textarea.style.height = textarea.scrollHeight + 'px';
+  charCount.textContent = `${textarea.value.length} / 1000`;
+</script>
+
+</html>

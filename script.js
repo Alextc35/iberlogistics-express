@@ -166,10 +166,10 @@ function toggleLanguage() {
     if (currentLang === "es") {
         langLabel.textContent = "English";
         langSwitch.src = "assets/idioma.png";
-        langSwitch.alt = "Español";
+        langSwitch.alt = "English";
     } else {
         langLabel.textContent = "Español";
         langSwitch.src = "assets/espana.png";
-        langSwitch.alt = "English";
+        langSwitch.alt = "Español";
     }
 }

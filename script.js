@@ -282,11 +282,11 @@ function toggleLanguage() {
     const langSwitch = document.querySelector(".lang-switch img");
     if (currentLang === "es") {
         langLabel.textContent = "English";
-        langSwitch.src = "assets/idioma.png";
+        langSwitch.src = "assets/english.webp";
         langSwitch.alt = "English";
     } else {
         langLabel.textContent = "Español";
-        langSwitch.src = "assets/espana.png";
+        langSwitch.src = "assets/spain.webp";
         langSwitch.alt = "Español";
     }
 }

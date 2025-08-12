@@ -17,14 +17,13 @@ header {
     color: #000;
     position: relative;
     padding: 0;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: rgba(0,0,0,0.5);
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: rgba(0,0,0,0.5);
+    }
 }
 
 .nav {
@@ -51,11 +50,10 @@ header nav {
     cursor: pointer;
     color: white;
     font-weight: 500;
-}
-
-.lang-switch img {
-    display: block;
-    border-radius: 2px;
+    & img {
+        display: block;
+        border-radius: 2px;
+    }
 }
 
 .hero-content {
@@ -63,16 +61,17 @@ header nav {
     padding: 100px 20px 150px 20px;
     max-width: 800px;
     margin: 0 auto;
-}
-
-.hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    & h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    & p {
+        color: #f3f3f3;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
 }
 
 .btn {
@@ -115,6 +114,14 @@ header nav {
   border-radius: 8px;
   position: relative;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  & ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+  & li {
+    margin: 0.25rem 0;
+    font-weight: 600;
+  }
 }
 
 .modal-close {
@@ -138,7 +145,6 @@ header nav {
 .more-info-btn:hover {
   color: #0056b3;
 }
-
 
 .services {
     padding: 60px 20px;
@@ -388,11 +394,14 @@ footer {
     }
 
     .hero-content h1 {
+        color: #f3f3f3;
         font-size: 32px;
     }
 
     .hero-content p {
+        color: #f3f3f3;
         font-size: 16px;
+        font-weight: 300;
     }
 
     .services-grid {

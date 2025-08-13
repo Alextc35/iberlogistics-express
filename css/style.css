@@ -407,6 +407,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .more-info-btn {
+        display: none;
+    }
+
     .why-grid {
         grid-template-columns: 1fr;
     }

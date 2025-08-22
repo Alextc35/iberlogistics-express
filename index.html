@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBERLOGISTICS EXPRESS S.L. | Global Shipping & Logistics</title>
+  <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+  <meta name="description" content="Iberlogistics Express S.L. provides reliable international shipping, global logistics solutions, air and sea freight services, import/export support, and customs clearance for businesses worldwide.">
+  <meta name="keywords" content="international shipping, global logistics, air freight, sea freight, import services, export services, customs clearance, supply chain management, Iberlogistics Express">
+  <meta name="author" content="Iberlogistics Express S.L.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/translations.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <nav>
+        <div>
+          <img src="img/logo-iberlogistics-express.webp" class="logo-iberlogistics-express" alt="Iberlogistics Express S.L.">
+        </div>
+
+        <div>
+          <ul class="nav">
+            <li><a href="#index" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+            <li><a href="#why-us" data-i18n="nav.about">Sobre nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="lang-switch" onclick="toggleLanguage()">
+          <img src="img/english.webp" alt="Language" width="32" height="32">
+          <span id="lang-label">English</span>
+        </div>
+      </nav>
+
+      <div class="hero-content" id="index">
+        <h1 data-i18n="hero.title">IBERLOGISTICS EXPRESS S.L.</h1>
+        <p data-i18n="hero.text">
+          Se ocupa de organizar el <strong>transporte internacional</strong> para que las mercancías que le son confiadas por sus clientes viajen por la mejor y más rápida vía, así como con las condiciones económicas más ventajosas para sus clientes.
+        </p>
+        <a href="mailto:iberlogistics@iberlogistics.com" class="btn" data-i18n="hero.btn">Solicitar presupuesto</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="services" id="services">
+        <h2 data-i18n="services.title">Nuestros Servicios</h2>
+        <div class="services-grid">
+          <!-- Transporte Aéreo -->
+          <div class="service-card">
+            <img src="img/plain.webp" alt="Transporte Aéreo">
+            <h3 data-i18n="air.title">Transporte Aéreo</h3>
+            <p data-i18n="air.text">Envíos urgentes y seguros a cualquier parte del mundo.</p><br>
+            <ul>
+              <li data-i18n="air.list.0">Servicios de vuelo directo</li>
+              <li data-i18n="air.list.1">Servicios de recogida y entrega</li>
+              <li data-i18n="air.list.2">Servicios puerta a puerta</li>
+              <li data-i18n="air.list.3">Documentaciones</li>
+              <li data-i18n="air.list.4">Despacho de aduana de importación y exportación</li>
+            </ul>
+          </div>
+
+          <!-- Transporte Marítimo -->
+          <div class="service-card">
+            <img src="img/maritime.webp" alt="Transporte Marítimo">
+            <h3 data-i18n="maritime.title">Transporte Marítimo</h3>
+            <p data-i18n="maritime.text">Importación y exportación por vía marítima con cobertura global.</p><br>
+            <ul>
+              <li data-i18n="maritime.list.0">Transporte de mercancía hasta el puerto de salida</li>
+              <li data-i18n="maritime.list.1">Despachos de aduanas de importación y exportación</li>
+              <li data-i18n="maritime.list.2">Seguro de transporte marítimo</li>
+              <li data-i18n="maritime.list.3">Trabajamos con todas las navieras</li>
+              <li data-i18n="maritime.list.4">Reserva de espacio en los buques</li>
+              <li data-i18n="maritime.list.5">Coordinación en la recepción en puertos y almacenes</li>
+              <li data-i18n="maritime.list.6">Contenedores completos (FCL)</li>
+              <li data-i18n="maritime.list.7">Grupajes marítimos (LCL)</li>
+              <li data-i18n="maritime.list.8">Pago de fletes oceánicos y gastos portuarios</li>
+            </ul>
+          </div>
+
+          <!-- Comercio Exterior -->
+          <div class="service-card">
+            <img src="img/customs.webp" alt="Comercio Exterior y Aduanas">
+            <h3 data-i18n="customs.title">Comercio Exterior y Aduanas</h3>
+            <p data-i18n="customs.text">Asesoría y gestión integral de trámites aduaneros y comercio exterior.</p><br>
+            <ul>
+              <li data-i18n="customs.list.0">Confección y presentación del INTRASTAT.</li>
+              <li data-i18n="customs.list.1">Organización del transporte internacional con rapidez y condiciones ventajosas.</li>
+              <li data-i18n="customs.list.2">Infraestructura propia y red de corresponsales en todo el mundo.</li>
+              <li data-i18n="customs.list.3">Seguimiento integral de envíos: carga, descarga, almacenaje, distribución y aduanas.</li>
+              <li data-i18n="customs.list.4">Agente multimodal: avión, barco y camión.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us" id="why-us">
+        <h2 data-i18n="why.title">¿Por qué elegirnos?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <img src="img/fast-trade.webp" alt="Rapidez">
+            <h3 data-i18n="why.cards.0">Rapidez</h3>
+            <p data-i18n="why.cardsText.0">Procesos optimizados para que tu carga llegue en el menor tiempo posible.</p>
+          </div>
+
+          <div class="why-card">
+            <img src="img/secure.webp" alt="Seguridad">
+            <h3 data-i18n="why.cards.1">Seguridad</h3>
+            <p data-i18n="why.cardsText.1">Protegemos tus envíos con sistemas y protocolos certificados.</p>
+          </div>
+
+          <div class="why-card">
+            <img src="img/fee.webp" alt="Tarifas competitivas">
+            <h3 data-i18n="why.cards.2">Tarifas competitivas</h3>
+            <p data-i18n="why.cardsText.2">Precios ajustados y transparentes para todos nuestros servicios.</p>
+          </div>
+
+          <div class="why-card">
+            <img src="img/support.webp" alt="Atención personalizada">
+            <h3 data-i18n="why.cards.3">Atención personalizada</h3>
+            <p data-i18n="why.cardsText.3">Asistencia directa y dedicada durante todo el proceso de envío.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#">
+            <img src="img/logo-iberlogistics-express.webp" alt="Iberlogistics Express" width="200">
+          </a>
+          <p data-i18n="footer.company">© 2025 Iberlogistics Express S.L.<br>Todos los derechos reservados.</p>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 data-i18n="footer.contactTitle">Contacto</h4>
+          <p>
+            Tel: <a href="tel:+34917479564">+34 91 747 95 64</a><br>
+            Email: <a href="mailto:iberlogistics@iberlogistics.com">iberlogistics@iberlogistics.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.bottom">Desarrollado por <a href="https://www.linkedin.com/in/alejandrotellezcorona/" target="_blank">@alextc35</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,4 +1,3 @@
-# IBERLOGISTICS EXPRESS S.L.
 <img src="img/logo-iberlogistics-express.webp" alt="Image description" width="300">
 
 🌐 **Official website of Iberlogistics Express S.L.**, a company specialized in international transport and logistics.
